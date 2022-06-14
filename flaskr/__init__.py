@@ -30,7 +30,7 @@ def create_app(test_config=None):
     # Register DB things
     db.init_app(app)
     
-    # Register DB things
+    # Register Blueprint
     app.register_blueprint(auth.bp)
 
     return app
